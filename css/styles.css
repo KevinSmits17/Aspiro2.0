@@ -38,13 +38,10 @@ footer a:hover {
 	font-weight: 700;
 }
 
-.video_container{
-	position: relative;
-	width: 100%;
-	
+.nav-margin{
+	margin-left: 20%;
 }
-
-.video_container2{
+.video_container{
 	position: relative;
 	width: 100%;
 	
