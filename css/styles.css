@@ -19,6 +19,7 @@ header {
 
 .navbar {
 	background-color: #f1eff2;
+	height: 80px;
 }
 
 /* Effect on social media buttons */
@@ -34,17 +35,19 @@ footer a:hover {
 
 .nav-text{
 	font-family: montserrat, sans-serif;
-	text-transform: uppercase;
-	font-weight: 700;
+	text-transform: unset;
+	font-size: 16pt;
+	font-weight: 500;
+	margin-left: 40%;
 }
 
 .nav-margin{
 	margin-left: 20%;
 }
+
 .video_container{
 	position: relative;
 	width: 100%;
-	
 }
 
 .openingvideo{
@@ -119,5 +122,17 @@ p{
 	width: 100%;
 }
 
-
+.video_overlay1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-family: greycliff cf, sans-serif;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+}
 
