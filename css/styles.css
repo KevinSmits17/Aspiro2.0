@@ -15,7 +15,7 @@ body {
 /* Changing the background colour for the header */
 
 header {
-	background-color: #000060;
+	background-color: #fff;
 
 }
 
@@ -38,6 +38,39 @@ header {
 
 /* Effect on social media buttons */
 
+.b-example-divider {
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+.form-control-dark {
+	color: #fff;
+	background-color: var(--bs-dark);
+	border-color: var(--bs-gray);
+  }
+.form-control-dark:focus {
+	color: #fff;
+	background-color: var(--bs-dark);
+	border-color: #fff;
+	box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+.bi {
+	vertical-align: -.125em;
+	fill: currentColor;
+  }
+  
+.text-small {
+	font-size: 85%;
+  }
+  
+.dropdown-toggle {
+	outline: 0;
+  }
+
 footer a:hover {
 	opacity: .5;
 }
@@ -45,6 +78,14 @@ footer a:hover {
 .nav_logo{
 	width: 150px;
 	margin-left: 10%;
+}
+
+.nav-link{
+	color:black;
+	font-size: 25px;
+	font-weight: 700;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .nav-text{
@@ -200,12 +241,11 @@ p{
 }
 
 .story_image{
-	width: 100%;
+	width: 50%;
+	height: 300px;
 }
 
 .story_button{
-	margin-left: 10%;
-	margin-top: 5%;
 	background-color:rgba(0, 0, 0, 0) ;
 	padding: 10px;
 	font-family: lato, sans-serif;
@@ -214,8 +254,6 @@ p{
 }
 
 .story_button_r{
-	margin-left: 80%;
-	margin-top: 5%;
 	background-color:rgba(0, 0, 0, 0) ;
 	padding: 10px;
 	font-family: lato, sans-serif;
@@ -313,3 +351,8 @@ p{
 .bold{
 	font-weight: 800;
 }
+
+.deblue{
+	color: black;
+}
+

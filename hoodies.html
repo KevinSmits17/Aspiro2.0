@@ -20,30 +20,23 @@
   </head>
   <body>
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="home.html">
-          <img class="nav_logo" src="images/logos/SVG/Aspiro_logo_red.svg" alt="Breda University of Applied Sciences">
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="home.html" class="d-flex align-items-center col-12 col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="images/logos/SVG/Aspiro_logo_red.svg">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active nav-text" aria-current="page" href="hoodies.html">Hoodies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-text" aria-current="page" href="stories.html">Stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-text" aria-current="page" href="corporate.html">Corporate</a>
-            </ul>
+        
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mt-3 mb-md-0 text-decoration-none">
+          <li><a href="hoodies.html" class="nav-link px-2 link">Hoodies</a></li>
+          <li><a href="stories.html" class="nav-link px-2 link">Stories</a></li>
+          <li><a href="corporate.html" class="nav-link px-2"> Corporate</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          
         </div>
-      </div>
-    </nav>
-    <!-- End of navigation bar -->
+      </header>
+    </div>
 <!-- Start of carrousel, adapted from https://getbootstrap.com/docs/5.1/components/carousel/ -->
 <section class="container-fluid p-0">
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -96,11 +89,12 @@
 
         <!-- Card #1 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product1.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/menhoodiebrokenwhite.png" alt="Placeholder Image">
             <div class="card-body">
-              <h5 class="card-title">Broken White Hoodie</h5>
-              <p class="card-text">product title</p>
+              <h5 class="card-title">Broken White</h5>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€23,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -111,14 +105,16 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
         <!-- Card #2 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product2.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/womanhoodiepurple.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">purple shine</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€23,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -129,14 +125,16 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
         <!-- Card #3 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product3.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/menhoodiesand.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">beach sand</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€25,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -147,14 +145,16 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
         <!-- Card #4 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product4.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/womenhoodiegrey.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">grey play</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€25,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -165,15 +165,17 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
 
         <!-- Card #4 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product5.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/menhoodiewhite.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">white cloud</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€23,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -184,15 +186,17 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
 
         <!-- Card #4 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product6.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/womanhoodieblack.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">black fantasy</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€25,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -203,15 +207,17 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
 
         <!-- Card #4 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product7.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/womanshoodiepink.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">PINK POWER</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€28,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -222,15 +228,17 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
 
         <!-- Card #4 -->
         <div class="col-sm-6 col-lg-4 col-xl-3">
+          <a class="text-decoration-none deblue" href="product8.html">
           <div class="card shadow h-100">
             <img class="img-fluid" src="images/product/menshoodieredfront.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">RED-SPIRE</h5>
-              <p class="card-text">product title</p>
+              <p class="card-text">Hoodie</p>
               <h6 class="card-price">€24,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
@@ -241,6 +249,7 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
     
      <!-- A footer with socials -->
