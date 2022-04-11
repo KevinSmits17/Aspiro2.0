@@ -121,6 +121,11 @@ footer a:hover {
 	font-weight: 300;
 }
 
+.unlink{
+	color: black;
+	text-decoration: none;
+}
+
 .button{
 	display: block;
 }
@@ -279,4 +284,32 @@ p{
 
 .story_overlay_right:hover{
 	background-image: linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0.3));
+}
+
+.sproduct select{
+	display: block;
+	padding: 5px 10px;
+
+}
+
+.sproduct input{
+	width: 50px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.buy-btn{
+	background-color: black;
+	opacity: 1;
+	transition: 0.3s all;
+	color: #fff;
+	font-weight: 700;
+	padding: 10px 15px;
+}
+
+
+.bold{
+	font-weight: 800;
 }
