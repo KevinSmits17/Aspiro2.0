@@ -131,13 +131,11 @@ footer a:hover {
 }
 
 .title_1{
-	margin-left: 10%;
 	font-size: 80pt;
 	font-weight: 700;
 }
 
 .title_2{
-	margin-left: 10%;
 	font-size: 40pt;
 	font-weight: 400;
 }
@@ -172,7 +170,6 @@ footer a:hover {
 }
 
 .read_more_button{
-	margin-left: 10%;
 	margin-top: 5%;
 	background-color:rgba(0, 0, 0, 0) ;
 	padding: 10px;
