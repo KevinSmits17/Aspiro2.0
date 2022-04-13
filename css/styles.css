@@ -278,7 +278,7 @@ p{
 	width: 100%;
 }
 
-#story_overlay_left{
+.story_overlay_left{
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -293,7 +293,7 @@ p{
 	justify-content: center;
 }
 
-#story_overlay_right{
+.story_overlay_right{
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -311,6 +311,11 @@ p{
 
 .card_margin{
 	left: 20px;
+}
+
+.card-title{
+	color: #571019;
+	opacity: 1;
 }
 
 .story_overlay_left:hover{
@@ -353,3 +358,57 @@ p{
 	color: black;
 }
 
+hr{
+	color: #571019;
+	opacity: 1;
+	padding: 2px;
+}
+
+.marketing .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+.marketing h2 {
+	font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.feat{
+	background-color: #616262;
+	color: #f1eff2;
+}
+
+.featurette-divider {
+	margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+	  
+	.featurette-heading {
+	  font-size: 50px;
+	}
+  }
+  
+  @media (min-width: 62em) {
+	.featurette-heading {
+	  margin-top: 7rem;
+	}
+  }
