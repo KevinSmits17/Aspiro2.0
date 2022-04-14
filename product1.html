@@ -25,7 +25,7 @@
     <div class="container">
       <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="home.html" class="d-flex align-items-center col-12 col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-          <img src="images/logos/SVG/Aspiro_logo_red.svg">
+          <img src="images/logos/SVG/Aspiro_logo_red.svg" alt="aspiro logo">
         </a>
         
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mt-3 mb-md-0 text-decoration-none">
@@ -43,12 +43,12 @@
     <section class="container sproduct my-5 pt-5">
       <div class="row">
         <div class="col-lg-5 col-md-12 col-12">
-          <img class="img-fluid w-100" src="images/product/menhoodiesand.png" alt="Menhoodiesands">
+          <img class="img-fluid w-100" src="images/product/menhoodiebrokenwhite.png" alt="Menhoodiesands">
         </div>
         <div class="col-lg-6 col-md-12 col-12">
           <h6 class="py-4"><a class="unlink" href="home.html">Home</a> / <a class="unlink" href="hoodies.html">Hoodies</a></h6>
-          <h1 class="bold">Beach Sand</h1>
-          <h2>€25,99</h2>
+          <h1 class="bold">Broken White</h1>
+          <h2>€23,99</h2>
           <select class="my-3 p-2">
             <option>Select Size</option>
             <option>XS</option>
@@ -59,14 +59,22 @@
             <option>XXL</option>
             <option>XXXL</option>
           </select>
-          <input class="p-2" type="number" value="1">
-          <button class="buy-btn">Add To Cart</button>
+          <input class="p-2" type="number" value="1">        
+          <button class="buy-btn" type="submit" onclick="openPopup()">Add To Cart</button>
           <h4 class="mt-5 mb-5">Product Details</h4>
-          <span>Product specifications and description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti quam corporis iure. Ad quasi aut ducimus quidem consectetur porro officia, odio quibusdam blanditiis earum dolore molestias quis distinctio laboriosam.</span>
+          <span>Our Soft Breeze collection contains hoodies for a chill vibe. Doesn't matter if you want to work out or if you want to relax, Soft Breeze is the collection for you with our soft cotton feel, which will make you feel like you're in heaven. &nbsp;</span>
         </div>
       </div>
     </section>
     
+    <div class="container">
+      <div class="popup" id="popup">
+        <h2>Thank you</h2>
+        <p>The product has been added to your cart.</p>
+        <button class="buy-btn" type="button" onclick="closePopup()">OK</button>
+    </div>
+    </div>
+
     <section id="related_prod">
 
       <div class="container text-center">
@@ -77,18 +85,11 @@
          <!-- Card #1 -->
          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
           <div class="card shadow h-100">
-            <img class="img-fluid" src="images/product/menhoodiebrokenwhite.png" alt="Placeholder Image">
+            <img class="img-fluid" src="images/product/menhoodiewhite.png" alt="Placeholder Image">
             <div class="card-body">
-              <h5 class="card-title">Broken White</h5>
-              <p class="card-text">Hoodie</p>
+              <h5 class="card-title">WHITE CLOUD</h5>
+              <p class="card-text">Neutral Vibe&nbsp;</p>
               <h6 class="card-price">€23,99</h6>
-            </div>
-            <div class="card-footer p-2 text-end">
-            <div class="button">
-            <a href="#">
-              <button class="add_to_cart_button" type="button"> Add to cart</button>
-            </a>
-            </div>
             </div>
           </div>
         </div>
@@ -98,15 +99,8 @@
             <img class="img-fluid" src="images/product/womanhoodiepurple.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">purple shine</h5>
-              <p class="card-text">Hoodie</p>
+              <p class="card-text">Colour Lover</p>
               <h6 class="card-price">€23,99</h6>
-            </div>
-            <div class="card-footer p-2 text-end">
-            <div class="button">
-            <a href="#">
-              <button class="add_to_cart_button" type="button"> Add to cart</button>
-            </a>
-            </div>
             </div>
           </div>
         </div>
@@ -116,19 +110,12 @@
             <img class="img-fluid" src="images/product/menhoodiesand.png" alt="Placeholder Image">
             <div class="card-body">
               <h5 class="card-title">beach sand</h5>
-              <p class="card-text">Hoodie</p>
+              <p class="card-text">Soft Breeze</p>
               <h6 class="card-price">€25,99</h6>
-            </div>
-            <div class="card-footer p-2 text-end">
-            <div class="button">
-            <a href="#">
-              <button class="add_to_cart_button" type="button"> Add to cart</button>
-            </a>
-            </div>
             </div>
           </div>
         </div>
-      
+      </div>
     </section>
       
 
@@ -170,6 +157,24 @@
       </div>
     </footer>
     <!-- End of the grid -->
+
+    
+
+    <script>
+      let popup = document.getElementById("popup");
+      
+      function openPopup(){
+        popup.classList.add("open-popup");
+    
+      }
+    
+      function closePopup(){
+        popup.classList.remove("open-popup");
+        
+      }
+    
+    </script>
+
 
   </body>
 </html>
