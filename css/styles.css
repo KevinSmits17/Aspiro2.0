@@ -1,11 +1,13 @@
 /* Importing a Google Font */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://use.typekit.net/zqi5dwp.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Changing the main font and background colour */
 
 body {
-	font-family: Raleway, sans-serif;
+	font-family: Lato, sans-serif;
 	background-color: #fffcf8;
 }
 
@@ -15,8 +17,7 @@ body {
 /* Changing the background colour for the header */
 
 header {
-	background-color: #000060;
-
+	background-color: #fff;
 }
 
 
@@ -34,9 +35,63 @@ header {
 	justify-content: center;
 }
 
+p{
+	font-family: Lato, sans-serif;
+}
 
+h1{
+	font-family: greycliff-cf, sans-serif;
+}
+
+h2{
+	font-family: greycliff-cf, sans-serif;
+}
+h3{
+	font-family: greycliff-cf, sans-serif;
+}
+h4{
+	font-family: greycliff-cf, sans-serif;
+}
+h5{
+	font-family: montserrat, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
 /* Effect on social media buttons */
+
+.b-example-divider {
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+.form-control-dark {
+	color: #fff;
+	background-color: var(--bs-dark);
+	border-color: var(--bs-gray);
+  }
+.form-control-dark:focus {
+	color: #fff;
+	background-color: var(--bs-dark);
+	border-color: #fff;
+	box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+  }
+  
+.bi {
+	vertical-align: -.125em;
+	fill: currentColor;
+  }
+  
+.text-small {
+	font-size: 85%;
+  }
+  
+.dropdown-toggle {
+	outline: 0;
+  }
 
 footer a:hover {
 	opacity: .5;
@@ -45,6 +100,15 @@ footer a:hover {
 .nav_logo{
 	width: 150px;
 	margin-left: 10%;
+}
+
+.nav-link{
+	color:black;
+	font-family: greycliff-cf, sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .nav-text{
@@ -90,13 +154,11 @@ footer a:hover {
 }
 
 .title_1{
-	margin-left: 10%;
 	font-size: 80pt;
 	font-weight: 700;
 }
 
 .title_2{
-	margin-left: 10%;
 	font-size: 40pt;
 	font-weight: 400;
 }
@@ -121,12 +183,16 @@ footer a:hover {
 	font-weight: 300;
 }
 
+.unlink{
+	color: black;
+	text-decoration: none;
+}
+
 .button{
 	display: block;
 }
 
 .read_more_button{
-	margin-left: 10%;
 	margin-top: 5%;
 	background-color:rgba(0, 0, 0, 0) ;
 	padding: 10px;
@@ -142,11 +208,7 @@ footer a:hover {
 	color: white;
 }
 
-h5{
-	font-family: montserrat, sans-serif;
-	font-weight: 700;
-	text-transform: uppercase;
-}
+
 
 p{
 	font-family: lato, sans-serif;
@@ -195,35 +257,37 @@ p{
 }
 
 .story_image{
-	width: 100%;
+	width: 50%;
+	height: 300px;
 }
 
 .story_button{
-	margin-left: 10%;
-	margin-top: 5%;
+	border-style: solid;
 	background-color:rgba(0, 0, 0, 0) ;
 	padding: 10px;
 	font-family: lato, sans-serif;
-	border-color: white;
+	border-color: #571019;
+	text-decoration: none;
 	color: white;
 }
 
 .story_button_r{
-	margin-left: 80%;
-	margin-top: 5%;
+	border-style: solid;
 	background-color:rgba(0, 0, 0, 0) ;
 	padding: 10px;
+	margin-bottom: 10px;
 	font-family: lato, sans-serif;
 	border-color: white;
 	color: white;
+	text-decoration: none;
 	justify-self: right;
 }
 
 .story_button:hover{
-	background-color: white;
-	color: rgba(0, 0, 0, 1);
+	background-color: #571019;
+	color: rgba(255, 255, 255, 1);
 	font-weight: 700;
-	border-color: rgba(0, 0, 0, 0.5);
+	border-color: rgba(255, 255, 255, 0,5);
 }
 
 .story_button_r:hover{
@@ -238,7 +302,7 @@ p{
 	width: 100%;
 }
 
-#story_overlay_left{
+.story_overlay_left{
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -253,7 +317,7 @@ p{
 	justify-content: center;
 }
 
-#story_overlay_right{
+.story_overlay_right{
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -273,6 +337,11 @@ p{
 	left: 20px;
 }
 
+.card-title{
+	color: #571019;
+	opacity: 1;
+}
+
 .story_overlay_left:hover{
 	background-image: linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0.3));
 }
@@ -280,3 +349,118 @@ p{
 .story_overlay_right:hover{
 	background-image: linear-gradient(right, rgba(0,0,0,1), rgba(0,0,0,0.3));
 }
+
+.sproduct select{
+	display: block;
+	padding: 5px 10px;
+
+}
+
+.sproduct input{
+	width: 50px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.buy-btn{
+	background-color: black;
+	opacity: 1;
+	transition: 0.3s all;
+	color: #fff;
+	font-weight: 700;
+	padding: 10px 15px;
+}
+
+
+.bold{
+	font-weight: 800;
+}
+
+.deblue{
+	color: black;
+}
+
+hr{
+	color: #571019;
+	opacity: 1;
+	padding: 2px;
+}
+
+.marketing .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+.marketing h2 {
+	font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+}
+
+/* Featurettes
+------------------------- */
+
+.feat{
+	background-color: #f1eff2;
+	color: #000;
+}
+
+.whiterow{
+	background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+	color: #f1eff2;
+
+}
+
+
+
+.text-muted1{
+	color: #571019;
+	opacity: 0,8;
+}
+
+.greyrow{
+	background-color: #616262;
+	color: #f1eff2;
+	background-image: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+}
+
+.row{
+	padding: 1rem;
+}
+
+.featurette{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.featurette-divider {
+	padding: 0px;
+	margin: 0%;
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+	  
+	.featurette-heading {
+	  font-size: 50px;
+	}
+  }
+  
+  @media (min-width: 62em) {
+	.featurette-heading {
+	  margin-top: 2rem;
+	}
+  }

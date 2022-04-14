@@ -20,45 +20,43 @@
   </head>
   <body>
 
-    <!-- Navigation bar, adapted from https://getbootstrap.com/docs/5.1/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid center">
-        <a class="navbar-brand" href="home.html">
-          <img class="nav_logo" src="images/logos/SVG/Aspiro_logo_red.svg" alt="Breda University of Applied Sciences">
+    <div class="shadow"> 
+    <div class="container">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="home.html" class="d-flex align-items-center col-12 col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img src="images/logos/SVG/Aspiro_logo_red.svg" alt="Aspiro Logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active nav-text" aria-current="page" href="hoodies.html">Hoodies</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-text" aria-current="page" href="stories.html">Stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-text" aria-current="page" href="corporate.html">Corporate</a>
-            </ul>
+        
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mt-3 mb-md-0 text-decoration-none">
+          <li><a href="hoodies.html" class="nav-link px-2 link">Hoodies</a></li>
+          <li><a href="stories.html" class="nav-link px-2 link">Stories</a></li>
+          <li><a href="corporate.html" class="nav-link px-2"> Corporate</a></li>
+        </ul>
+  
+        <div class="col-md-3 text-end">
+          
         </div>
-      </div>
-    </nav>
-    <!-- End of navigation bar -->
+      </header>
+    </div>
+  </div>
+    
 
     <div class="video_container">
       <video class="openingvideo" src="images/Videos/testvid_2.mp4" autoplay loop muted>
 
      </video>
 
-      <div class="video_overlay">
-          <div class="title_1">ASPIRE</div>
-          <div class="title_2">to be you</div>
-          <div class="button">
+      <div class="container">
+      <div class="row video_overlay">
+          <h1 class="col-12 col-md-6 title_1">ASPIRE</h1>
+          <h3 class="col-12 col-md-6 title_2">to be you</h3>
+          <div class="col-12 col-md-6 button">
               <a href="hoodies.html">
                   <button class="read_more_button" type="button">Read More</button>
               </a>
           </div>
       </div>
+    </div>
     </div>
     
     
@@ -67,17 +65,21 @@
       Learn about cards at: https://getbootstrap.com/docs/5.1/components/card/
     -->
     <main class="container py-4">
+     <div class="text-center">
       <H1>Hoodies</H1>
-      <div class="row g-3 justify-content-evenly">
-
-        <!-- Card #1 -->
-        <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
+      <hr class="mx-auto red">
+    </div> 
+    <!-- Product gallery-->
+      <div class="row g-3 justify-content-evenly"> 
+        <!-- Card #4 -->
+        <div class="col-sm-6 col-lg-3 col-md-6">
+          <a class="text-decoration-none deblue" href="product8.html">
           <div class="card shadow h-100">
-            <img class="img-fluid" src="images/product/placeholder/placeholderphoto.jpg" alt="Placeholder Image">
+            <img class="img-fluid" src="images/product/menshoodieredfront.png" alt="Placeholder Image">
             <div class="card-body">
-              <h5 class="card-title">Hoodie 1</h5>
-              <p class="card-text">product title</p>
-              <h6 class="card-price">€20,00</h6>
+              <h5 class="card-title">RED-SPIRE</h5>
+              <p class="card-text">Hoodie</p>
+              <h6 class="card-price">€24,99</h6>
             </div>
             <div class="card-footer p-2 text-end">
             <div class="button">
@@ -87,6 +89,7 @@
             </div>
             </div>
           </div>
+        </a>
         </div>
         <!-- Card #2 -->
         <div class="col-6 col-sm-6 col-lg-3 col-xl-3">
@@ -142,7 +145,9 @@
             </div>
           </div>
         </div>
+      </div>
     <!-- End of the grid with cards -->
+
     <!-- Start of carrousel, adapted from https://getbootstrap.com/docs/5.1/components/carousel/ -->
     <section class="container-fluid p-0">
           <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -192,23 +197,53 @@
     </div>
     </section>
     <!-- End of carrousel -->
+   
+    <main class="container py-4">
+      <div class="text-center">
+       <H1>Behind the brand</H1>
+       <hr class="mx-auto">
+   
+    <div class="container marketing">
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/team/niels.jpg" class="rounded-circle" width="140" height="140" ></img>
 
-    <!-- A footer with socials -->
-    <footer class="shadow-lg mt-5 py-4 bg-body">
-      <div class="container d-flex justify-content-between align-items-center">
-        <p>
-          © 2022 &mdash; Aspiro Gymwear
-        </p>
-        <ul class="list-unstyled d-flex align-items-center opacity-75">
-                    <li>
-            <a href="https://www.instagram.com/bredauniversityas/" target="_blank">
-              <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <!-- End of the grid -->
+        <h2>Niels van de Meijden</h2>
+        <h4>Co-Founder</h4>
+        <p>Head of Marketing</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/team/kevin.jpg" class="rounded-circle" width="140" height="140" ></img>
+        
+        <h2>Kevin Smits</h2>
+        <h4>Co-Founder</h4>
+        <p>Web Developer</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="images/team/melisa.jpg" class="rounded-circle" width="140" height="140" ></img>
+        <h2>Melisa Okyay</h2>
+        <h4>Co-Founder</h4>
+        <p>Content Creator</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+ 
+ 
+  <!-- A footer with socials -->
+ <footer class="sticky-bottom shadow-lg mt-5 py-4 bg-body">
+  <div class="container d-flex justify-content-between align-items-center">
+    <p>
+      © 2020&ndash;2021 &mdash; Breda University of Applied Sciences
+    </p>
+      <li>
+        <a href="https://www.instagram.com/bredauniversityas/" target="_blank">
+          <img class="m-2" src="images/instagram.svg" alt="Follow us on Instagram" width="26">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+<!-- End of the grid -->
 
   </body>
 </html>
