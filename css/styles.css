@@ -495,3 +495,6 @@ hr{
 	transform: translate(50%, 50%) scale(1);
 }
  
+.img-width{
+	width: 100%;
+}
