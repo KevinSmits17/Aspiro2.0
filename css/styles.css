@@ -6,9 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* Changing the main font and background colour */
 
+
 body {
 	font-family: Lato, sans-serif;
 	background-color: #fffcf8;
+	min-height: 100vh;
+	width: 100%;
 }
 
 
@@ -156,11 +159,13 @@ footer a:hover {
 .title_1{
 	font-size: 80pt;
 	font-weight: 700;
+	margin-left: 10%;
 }
 
 .title_2{
 	font-size: 40pt;
 	font-weight: 400;
+	margin-left: 10%;
 }
 
 .title_3{
@@ -284,6 +289,25 @@ p{
 }
 
 .story_button:hover{
+	background-color: #571019;
+	color: rgba(255, 255, 255, 1);
+	font-weight: 700;
+	border-color: rgba(255, 255, 255, 0,5);
+}
+
+.story_button1{
+	border-style: solid;
+	background-color:rgba(0, 0, 0, 0) ;
+	margin-top: 10px;
+	margin-left: 10%;
+	padding: 10px;
+	font-family: lato, sans-serif;
+	border-color: #571019;
+	text-decoration: none;
+	color: white;
+}
+
+.story_button1:hover{
 	background-color: #571019;
 	color: rgba(255, 255, 255, 1);
 	font-weight: 700;
