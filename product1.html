@@ -59,14 +59,22 @@
             <option>XXL</option>
             <option>XXXL</option>
           </select>
-          <input class="p-2" type="number" value="1">
-          <button class="buy-btn">Add To Cart</button>
+          <input class="p-2" type="number" value="1">        
+          <button class="buy-btn" type="submit" onclick="openPopup()">Add To Cart</button>
           <h4 class="mt-5 mb-5">Product Details</h4>
           <span>Product specifications and description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio corrupti quam corporis iure. Ad quasi aut ducimus quidem consectetur porro officia, odio quibusdam blanditiis earum dolore molestias quis distinctio laboriosam.</span>
         </div>
       </div>
     </section>
     
+    <div class="container">
+      <div class="popup" id="popup">
+        <H2>Thank you</H2>
+        <p>The product has been added to your cart.</p>
+        <button class="buy-btn" type="button" onclick="closePopup()">OK</button>
+    </div>
+    </div>
+
     <section id="related_prod">
 
       <div class="container text-center">
@@ -83,13 +91,6 @@
               <p class="card-text">Hoodie</p>
               <h6 class="card-price">€23,99</h6>
             </div>
-            <div class="card-footer p-2 text-end">
-            <div class="button">
-            <a href="#">
-              <button class="add_to_cart_button" type="button"> Add to cart</button>
-            </a>
-            </div>
-            </div>
           </div>
         </div>
         <!-- Card #2 -->
@@ -101,13 +102,6 @@
               <p class="card-text">Hoodie</p>
               <h6 class="card-price">€23,99</h6>
             </div>
-            <div class="card-footer p-2 text-end">
-            <div class="button">
-            <a href="#">
-              <button class="add_to_cart_button" type="button"> Add to cart</button>
-            </a>
-            </div>
-            </div>
           </div>
         </div>
         <!-- Card #3 -->
@@ -118,13 +112,6 @@
               <h5 class="card-title">beach sand</h5>
               <p class="card-text">Hoodie</p>
               <h6 class="card-price">€25,99</h6>
-            </div>
-            <div class="card-footer p-2 text-end">
-            <div class="button">
-            <a href="#">
-              <button class="add_to_cart_button" type="button"> Add to cart</button>
-            </a>
-            </div>
             </div>
           </div>
         </div>
@@ -170,6 +157,24 @@
       </div>
     </footer>
     <!-- End of the grid -->
+
+    
+
+    <script>
+      let popup = document.getElementById("popup");
+      
+      function openPopup(){
+        popup.classList.add("open-popup");
+    
+      }
+    
+      function closePopup(){
+        popup.classList.remove("open-popup");
+        
+      }
+    
+    </script>
+
 
   </body>
 </html>

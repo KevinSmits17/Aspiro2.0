@@ -464,3 +464,34 @@ hr{
 	  margin-top: 2rem;
 	}
   }
+
+  /* pop up button */
+
+  .popup{
+	  width: 400px;
+	  background-color: rgba(0, 0, 0, .4);
+	  background: #fff;
+	  border: black;
+	  border-style: solid;
+	  position: fixed;
+	  top: 0%;
+	  left: 30%;
+	  transform: translate(-50%, -50%) scale(0.1);
+	  text-align: center;
+	  padding: 0 30px 30px;
+	  color: #000;
+	  box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
+	  visibility: hidden;
+	  transition: transform 0,4s, top 0,4s;
+  }
+
+.popup h2{
+	padding-top: 30px;
+}
+
+.open-popup{
+	visibility: visible;
+	top: 40%;
+	transform: translate(50%, 50%) scale(1);
+}
+ 
