@@ -27,7 +27,7 @@ header {
 /* Changing the background color for the navigation bar */
 
 .navbar {
-	background-color: #f1eff2;
+	background-color: #fff;
 	height: 80px;
 	display: flex;
 	
@@ -521,4 +521,8 @@ hr{
  
 .img-width{
 	width: 100%;
+}
+
+.cart{
+	height: 40px;
 }
